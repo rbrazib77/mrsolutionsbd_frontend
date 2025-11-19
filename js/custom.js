@@ -66,6 +66,41 @@ $(".hero-slider").owlCarousel({
 });
 
 
+const track = document.getElementById('teamTrack');
+let cards = Array.from(document.querySelectorAll('.team-card'));
+
+// Duplicate cards to make infinite loop smooth
+cards.forEach(card => {
+    let clone = card.cloneNode(true);
+    track.appendChild(clone);
+});
+
+// Update cards array
+cards = Array.from(document.querySelectorAll('.team-card'));
+
+function setActiveCenter() {
+    let center = window.innerWidth / 2;
+    let activeCard = null;
+    let smallest = Infinity;
+
+    cards.forEach(card => {
+        let rect = card.getBoundingClientRect();
+        let cardCenter = rect.left + rect.width / 2;
+
+        let distance = Math.abs(center - cardCenter);
+
+        if (distance < smallest) {
+            smallest = distance;
+            activeCard = card;
+        }
+    });
+
+    cards.forEach(c => c.classList.remove('active'));
+    if (activeCard) activeCard.classList.add('active');
+}
+
+setInterval(setActiveCenter, 120);
+
 
 
 

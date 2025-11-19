@@ -24,29 +24,10 @@ h6,
 h6 a {
   line-height: 120%;
 }
-h1 {
-  font-size: 61px;
-}
-h2 {
-  font-size: 49px;
-}
-h3 {
-  font-size: 39px;
-}
-h4 {
-  font-size: 31px;
-}
-h5 {
-  font-size: 25px;
-}
-h6 {
-  font-size: 20px;
-}
 
 body {
   /* font-family: "Noto Sans Bengali", sans-serif; */
   font-family: "Noto Sans Bengali", "Noto Sans", sans-serif;
-
   color: #2c3333;
   font-size: 16px;
   font-weight: 500 !important;
@@ -1037,10 +1018,10 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.service-title {
+.section-title {
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700 !important;
+  font-weight: 900 !important;
   font-size: 26px;
   padding-bottom: 20px;
 }
@@ -1177,8 +1158,8 @@ body {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   #consult-form {
-    width: 100vw;   
-    right: -100vw; 
+    width: 100vw;
+    right: -100vw;
     padding: 20px;
     padding-top: 80px;
   }
@@ -1377,3 +1358,80 @@ body {
   background-color: #19183b;
   color: white;
 }
+/* =================Team  Secttions Start=================== */
+.team {
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+.team-slider {
+  overflow: hidden;
+}
+
+.team-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+}
+
+.team-slider:hover .team-track {
+  animation-play-state: paused;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  background: #19183b;
+  border-radius: 20px;
+  min-width: 450px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  border: 4px dotted #125ba6;
+}
+
+.team-card h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.team-card p {
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Row 1: Right → Left */
+.track-1 {
+  animation: slideLeft 18s linear infinite;
+}
+
+/* Row 2: Left → Right */
+.track-2 {
+  animation: slideRight 20s linear infinite;
+}
+
+/* Infinite keyframes */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* 50% because we duplicated content */
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* =================Team  Secttions End=================== */
