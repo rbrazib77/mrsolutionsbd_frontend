@@ -680,7 +680,7 @@ body {
   text-decoration: none;
 }
 .footer-widget ul li a:hover {
-  color: #ff7f3e;
+  color: #125ba6;
 }
 .footer-contact-widget {
   display: flex;
@@ -1358,6 +1358,17 @@ body {
   background-color: #19183b;
   color: white;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .popup-content {
+    padding: 10px;
+  }
+  .popup-body {
+    padding: 10px;
+  }
+}
+
 /* =================Team  Secttions Start=================== */
 .team {
   padding-bottom: 70px;
