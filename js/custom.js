@@ -101,6 +101,20 @@ function setActiveCenter() {
 
 setInterval(setActiveCenter, 120);
 
+$(function () {
+  $(".testimonial-slider").slick({
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: '<i class="fa fa-chevron-left prev"</i>',
+    nextArrow: '<i class="fa fa-chevron-right next"</i>',
+  });
+  
+});
+
+
 
 
 

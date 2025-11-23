@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mr solutions</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Uicons -->
+    <link rel="stylesheet" href="css/uicons.css" />
+    <!-- Icofont -->
+    <link rel="stylesheet" href="css/icofont.css" />
+    <!-- Maginific Popup CSS -->
+    <link rel="stylesheet" href="/css/maginific-popup.min.css" />
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <!-- Mobile Menu Modal -->
+    <div
+      class="modal mobile-menu-modal offcanvas-modal fade"
+      id="offcanvas-modal"
+    >
+      <div class="modal-dialog offcanvas-dialog">
+        <div class="modal-content">
+          <div class="modal-header offcanvas-header">
+            <!-- offcanvas-logo-start -->
+            <div class="offcanvas-logo">
+              <a href="index.html"><img src="images/Logo-1.png" alt="#" /></a>
+            </div>
+            <!-- offcanvas-logo-end -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="mobile-menu-modal-main-body">
+            <!-- offcanvas-menu start -->
+            <nav id="offcanvas-menu" class="navigation offcanvas-menu">
+              <ul id="nav mobile-nav" class="list-none offcanvas-men-list">
+                <li>
+                  <a href="about.html">আমাদের সম্পর্কে</a>
+                </li>
+                <li>
+                  <a href="index.html">আমাদের সার্ভিস</a>
+                </li>
+                <li>
+                  <a href="index.html">ক্লায়েন্টস</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">যোগাযোগ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-menu-modal-main-bottom">
+            <div class="topbar-school-info">
+              <ul
+                class="topbar-school-info-list d-flex mb-0 justify-content-center"
+              >
+                <li>
+                  <a href="#" target="_blank"
+                    ><img src="images/facebook.svg" alt="#"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><img src="images/linkedin.svg" alt="#"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><img src="images/whatsapp.svg" alt="#"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mobile Menu Modal -->
+    <!-- Topbar -->
+    <div class="topbar-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 col-xl-6 col-12">
+            <div class="topbar-left">
+              <div class="topbar-contact">
+                <div class="contact-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+8801234567890">+880 1518726277</a>
+                </div>
+                <div class="contact-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:info@example.com">info@example.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 d-none d-lg-block">
+            <div class="topbar-right">
+              <div class="topbar-school-info">
+                <ul class="topbar-school-info-list d-flex mb-0">
+                  <li>
+                    <a href="#" target="_blank"
+                      ><img src="images/facebook.svg" alt="#"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><img src="images/linkedin.svg" alt="#"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><img src="images/whatsapp.svg" alt="#"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==============Navbar Section Start===================-->
+
+    <!-- Header Area -->
+    <header id="active-sticky" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-inner">
+              <div class="row align-items-center">
+                <div class="col-lg-8 col-xl-3 col-md-8 col-8">
+                  <div class="header-logo">
+                    <a href="index.html"
+                      ><img src="images/Logo-1.png" alt="#"
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-9 col-md-4 col-4">
+                  <div class="header-right">
+                    <div class="header-menu">
+                      <nav class="navigation d-flex align-items-center">
+                        <ul class="header-menu-list">
+                          <li>
+                            <a href="about.html">আমাদের সম্পর্কে</a>
+                          </li>
+                          <li>
+                            <a href="#">আমাদের সার্ভিস</a>
+                          </li>
+                          <li>
+                            <a href="index.html">ক্লায়েন্টস</a>
+                          </li>
+                          <li>
+                            <a href="contact.html">যোগাযোগ</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <!-- Mobile Menu Button -->
+                  <button
+                    type="button"
+                    class="mobile-menu-offcanvas-toggler"
+                    data-bs-toggle="modal"
+                    data-bs-target="#offcanvas-modal"
+                  >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </button>
+                  <!-- End Mobile Menu Button -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Area -->
+    <!-- SECTION 1 : Mission + Vision -->
+    <section class="mission-visson">
+      <div class="container py-5">
+        <div class="row g-4">
+          <!-- Mission -->
+          <div class="col-md-6">
+            <div class="info-card blue">
+              <div class="d-flex align-items-center mb-5">
+                <div class="info-icon">🌐</div>
+                <div class="info-title">Our Mission</div>
+              </div>
+              <p>
+                To develop and empower media professionals across Saudi Arabia
+                by providing world-class training programs that align with
+                Vision 2030. We are committed to building a generation of
+                skilled media talents who will drive the transformation of the
+                Kingdom’s media landscape.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision -->
+          <div class="col-md-6">
+            <div class="info-card green">
+              <div class="d-flex align-items-center mb-5">
+                <div class="info-icon">👁️</div>
+                <div class="info-title">Our Vision</div>
+              </div>
+              <p>
+                To be the leading media training academy in the Middle East,
+                recognized for excellence in developing innovative media
+                professionals who shape the future of communication and
+                storytelling in the digital age.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 : Testimonial -->
+    <section class="testimonial">
+      <div class="container">
+        <div class="testimonial-slider">
+          <div class="testimonial-card">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+            >
+              <img
+                src="images/Expert Web Designe & Responsive Website  WordPress.jpg"
+                class="testimonial-img me-3"
+              />
+
+              <div>
+                <p class="testimonial-text">
+                  “At SBA Training Academy, we believe that every individual has
+                  the potential to excel in the media industry. Our commitment
+                  to excellence in education, combined with cutting-edge
+                  technology and industry partnerships, ensures that our
+                  graduates are not just prepared for today's challenges, but
+                  are also equipped to lead tomorrow's innovations.”
+                </p>
+
+                <div class="name">Razib Hossain</div>
+                <div class="designation">Director</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+            >
+              <img src="images/mamun.jpg" class="testimonial-img me-3" />
+
+              <div>
+                <p class="testimonial-text">
+                  “At SBA Training Academy, we believe that every individual has
+                  the potential to excel in the media industry. Our commitment
+                  to excellence in education, combined with cutting-edge
+                  technology and industry partnerships, ensures that our
+                  graduates are not just prepared for today's challenges, but
+                  are also equipped to lead tomorrow's innovations.”
+                </p>
+
+                <div class="name">Razib Hossain</div>
+                <div class="designation">Director</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start-->
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="footer-widget footer-logo-text">
+                <img src="images/logo-footer.png" alt="" />
+                <p>
+                  MR Solutions আমরা নির্ভরযোগ্য আইটি সাপোর্ট, আধুনিক ওয়েবসাইট ও
+                  সফটওয়্যার ডেভেলপমেন্ট এবং পূর্ণ পরিসরের প্রিন্টিং সামগ্রী
+                  প্রদান করি। আমাদের লক্ষ্য সহজ: দ্রুত সেবা, পরিষ্কার কাজ, এবং
+                  এমন সমাধান যা আপনার ব্যবসা আরও সহজভাবে চলতে সাহায্য করে।
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="footer-widget quick-links">
+                <h4 class="footer-widget-title">গুরুত্বপূর্ণ লিঙ্ক</h4>
+                <ul class="quick-links-inner">
+                  <li>
+                    <a href="contact.html">যোগাযোগ</a>
+                  </li>
+                  <li>
+                    <a href="about.html">গ্যালারি</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">ব্লগস</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="footer-widget contact">
+                <h4 class="footer-widget-title">যোগাযোগ</h4>
+                <!-- Single Widget -->
+                <div class="footer-contact-widget">
+                  <div class="footer-contact-icon">
+                    <img src="images/location.png" alt="#" />
+                  </div>
+                  <div class="footer-contact-info">
+                    <p class="footer-contact-text">
+                      Flat #B6, House No: 06, Road: 10,<br />
+                      Mirpur-11, Dhaka 1216
+                    </p>
+                  </div>
+                </div>
+                <!-- Single Widget -->
+                <div class="footer-contact-widget">
+                  <div class="footer-contact-icon">
+                    <img src="images/call.png" alt="#" />
+                  </div>
+                  <div class="footer-contact-info">
+                    <a href="tel:+880 1234 567890">+880 1734 268063</a>
+                    <a href="tel:+880 1234 567890">+880 1734 268063</a>
+                  </div>
+                </div>
+                <!-- Single Widget -->
+                <div class="footer-contact-widget">
+                  <div class="footer-contact-icon">
+                    <img src="images/email.png" alt="#" />
+                  </div>
+                  <div class="footer-contact-info">
+                    <a href="mailto:info@xyzschool.com">info@xyzschool.com</a>
+                    <a href="mailto:hello@xyzschool.com">hello@xyzschool.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+              <div class="footer-copyright">
+                <p class="footer-copyright-text">
+                  © 2025 MR Solutions BD. All right reserved.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <span class="footer-social"
+                >Developed by:<a
+                  href="https://github.com/rbrazib77"
+                  target="_blank"
+                  >Razib Hossain</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End-->
+    <!-- Free Consultation Button -->
+    <div id="consult-btn">FREE CONSULTATION</div>
+
+    <!-- Consultation Form -->
+    <div id="consult-form">
+      <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+      <h4 class="mb-3">ফ্রি প্রজেক্ট কনসালটেশন</h4>
+      <form>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control custom-bottom"
+            placeholder="আপনার পুরো নাম লিখুন"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control custom-bottom"
+            placeholder="মোবাইল নাম্বার লিখুন"
+          />
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control custom-input"
+                placeholder="ইমেইল ঠিকানা লিখুন"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="mb-3">
+              <select class="form-control custom-bottom custom-select">
+                <option value="">সার্ভিস নির্বাচন করুন</option>
+                <option value="">ওয়েবসাইট ডেভেলপমেন্ট</option>
+                <option value="">সফটওয়্যার ডেভেলপমেন্ট</option>
+                <option value="">আইটি সাপোর্ট</option>
+                <option value="">প্রিন্টিং সার্ভিসেস</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control custom-bottom"
+            rows="4"
+            placeholder="বিস্তারিত লিখুন"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">
+          বার্তা পাঠান
+        </button>
+        <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
+      </form>
+      <script
+        src="https://www.google.com/recaptcha/api.js"
+        async
+        defer
+      ></script>
+    </div>
+
+    <div id="autoPopup" class="popup" style="display: none">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">✖</span>
+
+        <div class="popup-header">
+          <h2 class="header-title">MR SOLUTIONS</h2>
+        </div>
+
+        <div class="popup-body">
+          <p class="body-intro">ফ্রি কনসালটেশন নিন</p>
+          <form>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="আপনার পুরো নাম লিখুন"
+              aria-label="Name"
+            />
+            <input
+              type="tel"
+              class="form-input"
+              placeholder="মোবাইল নাম্বার লিখুন"
+              aria-label="Phone"
+            />
+
+            <button type="submit" class="cta-button cta-red">
+              REQUEST A CALL
+            </button>
+
+            <p class="separator-text">OR</p>
+
+            <button type="button" class="cta-button cta-green">
+              CALL US NOW
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const popupDelay = 30000;
+
+      setTimeout(() => {
+        document.getElementById("autoPopup").style.display = "flex";
+      }, popupDelay);
+
+      document.getElementById("closePopup").onclick = function () {
+        document.getElementById("autoPopup").style.display = "none";
+      };
+    </script>
+
+    <script>
+      const consultBtn = document.getElementById("consult-btn");
+      const consultForm = document.getElementById("consult-form");
+      const closeBtn = document.querySelector("#consult-form .close-btn");
+
+      consultBtn.addEventListener("click", () => {
+        consultForm.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        consultForm.classList.remove("active");
+      });
+    </script>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="shadow">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CounterUp  JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/magnific-popup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- FancyBox JS -->
+    <script src="js/jquery-fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

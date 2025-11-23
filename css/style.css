@@ -1017,6 +1017,17 @@ body {
   font-weight: 900 !important;
   font-size: 26px;
   padding-bottom: 50px;
+  position: relative;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  background-color: #125ba6;
+  height: 3px;
+  width: 100px;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .service-card {
   position: relative;
@@ -1119,7 +1130,8 @@ body {
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center;
   z-index: 999;
-  background-color: #125ba6;
+  /* background-color: #125ba6; */
+  background: linear-gradient(to right, #2b6cb0, #19183b);
   color: #fff;
   padding: 12px 20px;
   border-radius: 5px;
@@ -1228,7 +1240,7 @@ body {
 
 /*====================Free Consultation Button End=======================*/
 
-/*===========POPUP CONTAINER & POSITIONING=============== */
+/*===========Popup Container and Positiong Start=============== */
 .popup {
   position: fixed;
   top: 0;
@@ -1254,8 +1266,8 @@ body {
 .popup-content {
   /* Dimensions and Styling */
   position: relative;
-  width: 90%; /* Responsive width for mobile */
-  max-width: 500px; /* Max width for desktop */
+  width: 90%;
+  max-width: 500px;
   background-color: #fff;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
@@ -1264,21 +1276,19 @@ body {
   padding: 50px;
 }
 
-/* --- 2. CLOSE BUTTON --- */
 .close-btn {
   position: absolute;
   top: 5px;
   right: 15px;
   font-size: 24px;
   font-weight: bold;
-  color: #125ba6; /* White 'X' over the red header */
+  color: #125ba6;
   cursor: pointer;
-  line-height: 1; /* Adjust vertical alignment */
-  padding: 5px; /* Increase clickable area */
+  line-height: 1;
+  padding: 5px;
   z-index: 10;
 }
 
-/* --- 3. HEADER SECTION (Red/Maroon) --- */
 .popup-header {
   color: #125ba6;
   text-align: center;
@@ -1303,14 +1313,14 @@ body {
   color: #333;
 }
 
-/* Input Fields */
+/*===== Input Fields =====*/
 .form-input {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px; /* Square edges */
-  box-sizing: border-box; /* Include padding/border in the element's total width/height */
+  border-radius: 5px;
+  box-sizing: border-box;
   height: 45px;
 }
 
@@ -1320,39 +1330,34 @@ body {
   box-shadow: 0 0 5px rgb(18, 91, 166);
 }
 
-/* Separator Text */
 .separator-text {
   text-transform: uppercase;
   font-weight: bold;
   margin: 15px 0;
 }
 
-/* --- 5. BUTTONS --- */
 .cta-button {
   width: 100%;
   padding: 10px 15px;
   margin-bottom: 10px;
   border: none;
-  border-radius: 0; /* Square edges */
+  border-radius: 0;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
-/* REQUEST A CALL Button (Red) */
 .cta-red {
   background-color: #125ba6;
   color: white;
 }
-
-/* CALL US NOW Button (Green) */
 .cta-green {
   background-color: #19183b;
   color: white;
 }
 
-/* Mobile Responsive */
+/*==== Mobile Responsive===== */
 @media (max-width: 768px) {
   .popup-content {
     padding: 10px;
@@ -1361,7 +1366,7 @@ body {
     padding: 10px;
   }
 }
-
+/*===========Popup Container and Positiong End=============== */
 /* =================Team  Secttions Start=================== */
 .team {
   padding-bottom: 70px;
@@ -1399,9 +1404,6 @@ body {
   font-weight: 700;
 }
 
-.team-card p {
-}
-
 .team-card img {
   width: 150px;
   height: 150px;
@@ -1409,24 +1411,21 @@ body {
   object-fit: cover;
 }
 
-/* Row 1: Right → Left */
 .track-1 {
   animation: slideLeft 18s linear infinite;
 }
 
-/* Row 2: Left → Right */
 .track-2 {
   animation: slideRight 20s linear infinite;
 }
 
-/* Infinite keyframes */
 @keyframes slideLeft {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
-  } /* 50% because we duplicated content */
+  }
 }
 
 @keyframes slideRight {
@@ -1530,17 +1529,14 @@ body {
 }
 
 .read-more-btn {
-  background: #333;
-  color: #fff;
-  padding: 10px 25px;
-  border-radius: 8px;
+  /* background-color: #125ba6; */
+  background: linear-gradient(to right, #2b6cb0, #19183b);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   transition: 0.3s;
-}
-
-.read-more-btn:hover {
-  background: #000;
 }
 
 /* =====Mobile Responsive===== */
@@ -1553,3 +1549,198 @@ body {
   }
 }
 /*========================Projects Section End==============================*/
+.contact-form {
+  padding: 50px 0px;
+}
+textarea.form-control {
+  height: 200px;
+  resize: vertical;
+  padding: 15px;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+/* small submit button centered */
+.submit-wrap {
+  display: flex;
+  justify-content: center;
+}
+.btn-submit {
+  background: #125ba6;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 18px;
+  border: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.form-row-gap {
+  row-gap: 18px;
+}
+.form-control:focus,
+.form-select:focus,
+textarea.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+  border-color: #125ba6;
+}
+/*============ Responsive Mobile ==============*/
+@media (max-width: 767px) {
+  .hero-heading {
+    font-size: 26px;
+  }
+}
+
+.map {
+  padding: 0px 0px 50px 0px;
+}
+.mission-visson {
+  padding: 70px 0px;
+}
+/* Mission & Vision Cards */
+.info-card {
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-left: 6px solid transparent;
+  height: 100%; /* card fill parent */
+  display: flex;
+  flex-direction: column; /* content vertically flow */
+}
+.info-card.blue {
+  border-left-color: #2b6cb0;
+}
+.info-card.green {
+  border-left-color: #19183b;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+.info-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Testimonial Card */
+.testimonial {
+  background-color: #eef7fe;
+  padding: 70px 0px;
+}
+
+.slick-slider {
+  width: 70%;
+  margin: 0 auto;
+}
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .slick-slider {
+    width: 100%;
+  }
+}
+
+.testimonial-card {
+  position: relative;
+  width: 100%;
+  margin: 0 auto !important;
+  padding: 32px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, #2b6cb0, #19183b);
+  border-radius: 10px;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #2b6cb0;
+}
+.testimonial-img img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.testimonial-text {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.name {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.designation {
+  color: #2b6cb0;
+  font-size: 15px;
+}
+
+.prev {
+  background: #125ba6;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+  z-index: 111;
+  border: 1px solid #ddd;
+  color: #fff;
+}
+
+.next {
+  background-color: #125ba6;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+  z-index: 111;
+  border: 1px solid #ddd;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .prev {
+    left: -20px;
+  }
+  .next {
+    right: -20px;
+  }
+}
