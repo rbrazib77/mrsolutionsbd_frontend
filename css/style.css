@@ -943,10 +943,11 @@ body {
   z-index: 1;
 }
 .about-title {
-  color: #125ba6; /* Red color */
+  color: #125ba6;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .about-text {
   font-size: 1.1rem;
@@ -1007,7 +1008,11 @@ body {
 }
 /*========================Service Section Start==============================*/
 .service {
-  background-color: #eef7fe;
+  background: linear-gradient(
+    to right,
+    rgba(0, 40, 85, 0.03),
+    rgba(76, 175, 80, 0.03)
+  );
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1440,7 +1445,11 @@ body {
 /* =================Team  Secttions End=================== */
 /*========================Clients Section Start==============================*/
 .clients {
-  background-color: #eef7fe;
+  background: linear-gradient(
+    to right,
+    rgba(0, 40, 85, 0.03),
+    rgba(76, 175, 80, 0.03)
+  );
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1599,6 +1608,46 @@ textarea.form-control:focus {
 .map {
   padding: 0px 0px 50px 0px;
 }
+
+.about-hero {
+  background: linear-gradient(
+    to right,
+    rgba(0, 40, 85, 0.03),
+    rgba(76, 175, 80, 0.03)
+  );
+  padding: 50px 0;
+}
+
+.about-hero p {
+  text-align: justify;
+}
+.about-btn {
+    background: linear-gradient(to right, #2b6cb0, #19183b);
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+/* Image glow effect */
+.hero-img-wrapper {
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 120px rgba(76, 175, 80, 0.15), 0 0 120px rgba(0, 40, 85, 0.15);
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
 .mission-visson {
   padding: 70px 0px;
 }
@@ -1612,6 +1661,9 @@ textarea.form-control:focus {
   height: 100%; /* card fill parent */
   display: flex;
   flex-direction: column; /* content vertically flow */
+}
+.info-card p{
+  text-align: justify;
 }
 .info-card.blue {
   border-left-color: #2b6cb0;
@@ -1630,16 +1682,22 @@ textarea.form-control:focus {
   justify-content: center;
   font-size: 22px;
   margin-right: 12px;
+  color: #125ba6;
 }
 
 .info-title {
   font-size: 22px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* Testimonial Card */
 .testimonial {
-  background-color: #eef7fe;
+  background: linear-gradient(
+    to right,
+    rgba(0, 40, 85, 0.03),
+    rgba(76, 175, 80, 0.03)
+  );
   padding: 70px 0px;
 }
 
