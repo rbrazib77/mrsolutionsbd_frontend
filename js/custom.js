@@ -114,6 +114,20 @@ $(function () {
   
 });
 
+// Active button toggle
+  $(document).ready(function () {
+    var mixer = mixitup('#mix-service-all');
+    // Set 'All' as default active
+    $('.filter[data-filter="all"]').addClass('active');
+
+    $('.filter').on('click', function () {
+      $('.filter').removeClass('active');
+      $(this).addClass('active');
+    });
+
+  });
+
+
 
 
 

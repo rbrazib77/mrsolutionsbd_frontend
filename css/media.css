@@ -80,29 +80,10 @@
     display: none;
   }
   .header-logo img {
-    width: 100%;
     height: 40px;
   }
   .header-area.is-sticky .header-inner {
     padding: 18px 0px;
-  }
-
-  .hero-slider .item {
-    height: auto !important;
-  }
-  .hero-slider .item img {
-    height: 200px !important;
-    background-size: contain;
-    border-radius: 5px !important;
-  }
-  .hero-slider .overlay {
-    /* height: 350px !important; */
-  }
-  .hero-slider .hero-content-title {
-    font-size: 29px !important;
-  }
-  .hero-slider .hero-slider-content {
-    margin-bottom: 80px;
   }
 
   .breadcrumbs-content-title {
