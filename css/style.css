@@ -1082,6 +1082,15 @@ body {
   margin-top: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 10px;
+}
+
+.service-card .title p {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
 }
 
 .service-card .content {
